@@ -14,9 +14,9 @@ export class DetailsComponent implements OnInit {
   arrayOfMusic:any;
 
   ngOnInit() {
-    this.getDetails();
+    this.getDetailsOfList();
   }
-  getDetails(): void {
+  getDetailsOfList(): void {
 
     const artist = this.route.snapshot.paramMap.get('id1');
     const name = this.route.snapshot.paramMap.get('id2');

@@ -22,12 +22,6 @@ export class MusicService {
     return this.http.get(url);
   }
 
-  // addToWishlist(value): any{
-  //   this.route.navigateByUrl("/wishlist/");
-  //   console.log(value);
-  //   this.musicService.setWishList(value).subscribe();
-  // }
-
   addToWishlist(track):any{
     return this.http.post("http://localhost:8080/api/v1/track",track);
   }

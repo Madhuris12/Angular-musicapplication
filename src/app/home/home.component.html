@@ -1,7 +1,7 @@
 <hr>
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <p class="lead"> SEARCH FOR YOUR FAVOURITE TRACK</p>
+    <p class="lead"> SEARCH YOUR FAVOURITE TRACK</p>
      </div>
 
      <form>
@@ -16,7 +16,7 @@
 
 
 <div class="container-fluid">
-  <h2>Trending Music</h2>
+  <h2>Trend Track</h2>
   <div class="container-fluid d-flex flex-wrap my-2">
     <div class="card col-sm-12 col-md-4 col-lg-3" style="width: 18rem;" *ngFor="let music of arrayOfMusic">
       
@@ -27,12 +27,12 @@
         <li class="list-group-item"> ARTIST : {{music.artist.name}}</li>
       </ul>
       <div class="card-body">
-         <!-- <button class="btn btn-outline-primary mx-2" > ADD </button> -->
+        
          <button mat-flat-button (click)="getDetails(music)"> DETAILS </button>
-         <!-- <button class="btn btn-outline-primary mx-2" > DETAILS </button>  -->
+         
          <nav>
            <router-outlet></router-outlet>
-          <a routerLink="/wishlist" routerLinkActive="active" (click)="addTrack(music)">Add to wishlist</a>
+          <a routerLink="/wishlist" routerLinkActive="active" (click)="addTrack(music)">Add</a>
 
         </nav>
  
